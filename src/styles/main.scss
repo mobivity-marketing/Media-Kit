@@ -1,0 +1,184 @@
+// Variables
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,900);
+
+$greenLight: #A3CF65;
+$green: #8DC63F;
+$greenDark: #709E40;
+
+$blueLight: #78B0B6;
+$blue: #569EA4;
+$blueDark: #467F83;
+
+$purpleLight: #BA94C4;
+$purple: #A87BB5;
+$purpleDark: #88639C;
+
+$redLight: #F5857E;
+$red: #F2665E;
+$redDark: #CE5750;
+
+$orangeLight: #F8A464;
+$orange: #F68D3D;
+$orangeDark: #D17834;
+
+$yellowLight: #FECF64;
+$yellow: #FEB611;
+$yellowDark: #E4A30F;
+
+$greyLight: #E6E7E8;
+$grey: #929497;
+$greyDark: #58595B;
+
+$white: #f4f4f4;
+$black: #58595B;
+
+$gutter: 20px;
+$border-radius: 4px;
+$transition: all 0.35s ease;
+$box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+
+// Global Styles
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: $black;
+}
+
+.container-fluid {
+  padding: $gutter*2;
+}
+
+// Sidebar Styles
+
+#sidebar-wrapper {
+
+  text-align: center;
+  
+  .logo {
+    max-width: 75%;
+    margin: 0px auto;
+    margin-top: $gutter;
+  }
+
+  li {
+    margin-top: $gutter;
+    font-size: 24px;
+
+    a {
+      color: $black;
+      text-decoration: none;
+      transition: $transition;
+
+      &:hover {
+        color: $green;
+      }
+
+    }
+
+  }
+
+}
+
+// Title Container
+
+#title {
+
+  background-color: $green;
+  text-align: center;
+  color: $white;
+
+  .logo-white {
+    width: 75%;
+    max-width: 480px;
+  }
+
+  h1 {
+    text-shadow: 2px 2px $greenDark;
+  }
+
+}
+
+// Introduction Container
+
+#introduction {
+
+  h3 {
+    font-size: 32px;
+    color: $blue;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Sidebar CSS
+
+#wrapper {
+  padding-left: 250px;
+  transition: $transition;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: $white;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: $transition;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: $transition;
+    }
+
+}
