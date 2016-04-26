@@ -51,6 +51,20 @@ html, body {
   padding: $gutter*2;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+hr {
+  margin-top: $gutter*3;
+  margin-bottom: $gutter*3;
+}
+
 // Sidebar Styles
 
 #sidebar-wrapper {
@@ -93,6 +107,7 @@ html, body {
   .logo-white {
     width: 75%;
     max-width: 480px;
+    margin-bottom: $gutter;
   }
 
   h1 {
@@ -105,6 +120,10 @@ html, body {
 
 #introduction {
 
+  h3, p, h4 {
+    margin-bottom: $gutter;
+  }
+
   h3 {
     font-size: 32px;
     color: $blue;
@@ -112,6 +131,23 @@ html, body {
   
   p {
     font-size: 24px;
+  }
+
+  h4 {
+    font-size: 28px;
+    color: $purpleLight;
+    text-align: center;
+  }
+
+  .col-xs-3 {
+
+    margin: 0px auto;
+    text-align: center;
+
+    img {
+      max-width: 250px;
+    }
+
   }
 
 }
