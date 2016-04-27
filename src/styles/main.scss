@@ -1,4 +1,8 @@
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
 // Variables
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,900);
 
@@ -31,15 +35,20 @@ $grey: #929497;
 $greyDark: #58595B;
 
 $white: #f4f4f4;
+$whiteLight: rgba(244, 244, 244, .75);
 $black: #58595B;
 
 $gutter: 20px;
 $border-radius: 4px;
 $transition: all 0.35s ease;
 $box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
-$text-shadow: 1px 1px $greenDark;
+$text-shadow: 1px 1px $black;
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
 // Global Styles
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
 html, body {
   width: 100%;
@@ -105,7 +114,11 @@ hr {
 
 }
 
-// Sidebar Styles
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+// Sidebar Section
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
 #sidebar-wrapper {
 
@@ -119,7 +132,7 @@ hr {
 
   li {
     margin-top: $gutter;
-    font-size: 24px;
+    font-size: 20px;
 
     a {
       color: $black;
@@ -136,7 +149,11 @@ hr {
 
 }
 
-// Title Container
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+// Title Section
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
 #title {
 
@@ -156,9 +173,15 @@ hr {
 
 }
 
-// Introduction Container
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
-#introduction {
+// About Section
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+#about {
+
+  border-bottom: 3px solid $green;
 
   h4 {
     text-align: center;
@@ -177,35 +200,136 @@ hr {
 
 }
 
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+// SmartSuite Section
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+#smartsuite {
+  
+  background-color: $whiteLight;
+  border-bottom: 3px solid $green;
+
+}
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
 // Logo Section
 
-.col-xs-4, .col-xs-12 {
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
-  img {
-    max-width: 100%;
+#logos {
+
+  border-bottom: 3px solid $green;
+
+  p {
+    margin-bottom: $gutter*2;
+  }
+
+  .col-xs-4, .col-xs-12 {
+
+    img {
+      max-width: 100%;
+    }
+
+  }
+
+  .col-xs-12 {
+
+    img {
+      margin-bottom: $gutter;
+    }
+
   }
 
 }
 
-.col-xs-12 {
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
-  img {
+// Logo Section
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+#colors {
+
+  background-color: $whiteLight;
+
+  .row {
     margin-bottom: $gutter;
   }
 
+  .col-xs-3 {
+
+    text-align: center;
+    margin: 0px auto;
+    margin-top: $gutter;
+
+  }
+
+  .box {
+    margin: 0px auto;
+    width: 95%;
+    height: 75px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    p {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $white;
+      text-shadow: $text-shadow;
+      font-size: 18px;
+    }
+
+  }
+
+  .green {
+    background-color: $green;
+  }
+
+  .blue {
+    background-color: $blue;
+  }
+
+  .purple {
+    background-color: $purple;
+  }
+
+  .red {
+    background-color: $red;
+  }
+
+  .orange {
+    background-color: $orange;
+  }
+
+  .yellow {
+    background-color: $yellow;
+  }
+
+  .white {
+    background-color: $white;
+
+    p {
+      color: $black;
+      text-shadow: none;
+    }
+
+  }
+
+  .black {
+    background-color: $black;
+  }
+
 }
 
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
+// Existing Sidebar Section Styles
 
-
-
-
-
-
-
-
-
-// Sidebar CSS
+// //////////////////////////////////////////////////////////////////////////////////////////////
 
 #wrapper {
   padding-left: 250px;
@@ -216,7 +340,7 @@ hr {
   margin-left: -250px;
   left: 250px;
   width: 250px;
-  background: $white;
+  background: $greyLight;
   position: fixed;
   height: 100%;
   overflow-y: auto;
