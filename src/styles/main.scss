@@ -181,7 +181,6 @@ hr {
 
 #about {
 
-  background-color: $whiteLight;
   border-bottom: 3px solid $green;
 
   h4 {
@@ -209,7 +208,33 @@ hr {
 
 #smartsuite {
   
+  background-color: $whiteLight;
   border-bottom: 3px solid $green;
+
+}
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+// Management Section
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+#management {
+
+  border-bottom: 3px solid $green;
+
+  h4 {
+    font-size: 24px;
+  }
+
+  em {
+    color: $grey;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 14px;
+  }
 
 }
 
@@ -254,7 +279,7 @@ hr {
     margin-bottom: $gutter;
   }
 
-  .col-xs-3 {
+  .col-xs-4 {
 
     text-align: center;
     margin: 0px auto;
@@ -267,7 +292,6 @@ hr {
     width: 95%;
     height: 75px;
     border-radius: $border-radius;
-    // box-shadow: $box-shadow;
 
     p {
       position: relative;
@@ -282,26 +306,6 @@ hr {
 
   .green {
     background-color: $green;
-  }
-
-  .blue {
-    background-color: $blue;
-  }
-
-  .purple {
-    background-color: $purple;
-  }
-
-  .red {
-    background-color: $red;
-  }
-
-  .orange {
-    background-color: $orange;
-  }
-
-  .yellow {
-    background-color: $yellow;
   }
 
   .white {
