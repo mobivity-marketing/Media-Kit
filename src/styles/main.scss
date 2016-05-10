@@ -182,6 +182,7 @@ hr {
 #about {
 
   border-bottom: 3px solid $green;
+  background-color: $whiteLight;
 
   h4 {
     text-align: center;
@@ -208,7 +209,6 @@ hr {
 
 #smartsuite {
   
-  background-color: $whiteLight;
   border-bottom: 3px solid $green;
 
 }
@@ -222,6 +222,7 @@ hr {
 #management {
 
   border-bottom: 3px solid $green;
+  background-color: $whiteLight;
 
   h4 {
     font-size: 24px;
@@ -240,14 +241,52 @@ hr {
 
 // //////////////////////////////////////////////////////////////////////////////////////////////
 
+// Media Contacts Section
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
+#contact {
+
+  border-bottom: 3px solid $green;
+
+  h4 {
+    font-size: 24px;
+  }
+
+  em {
+    color: $grey;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 18px;
+
+    a {
+      color: $green;
+      font-weight: 400;
+      transition: $transition;
+
+      &:hover {
+        color: $greenDark;
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
+}
+
+// //////////////////////////////////////////////////////////////////////////////////////////////
+
 // Logo Section
 
 // //////////////////////////////////////////////////////////////////////////////////////////////
 
 #logos {
 
-  background-color: $whiteLight;
   border-bottom: 3px solid $green;
+  background-color: $whiteLight;
 
   .col-xs-4, .col-xs-12 {
 
