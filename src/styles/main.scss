@@ -4,7 +4,7 @@
 
 // //////////////////////////////////////////////////////////////////////////////////////////////
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300|Roboto:300');
 
 $greenLight: #A3CF65;
 $green: #8DC63F;
@@ -65,6 +65,8 @@ h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
   margin-bottom: $gutter;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -78,6 +80,7 @@ h3 {
 
 p {
   font-size: 24px;
+  font-weight: 300;
 
   &.small {
     font-size: 18px;
@@ -347,6 +350,30 @@ hr {
     background-color: $green;
   }
 
+  .blue {
+    background-color: $blue;
+  }
+
+  .purple {
+    background-color: $purple;
+  }
+
+  .red {
+    background-color: $red;
+  }
+
+  .orange {
+    background-color: $orange;
+  }
+
+  .yellow {
+    background-color: $yellow;
+  }
+
+  .black {
+    background-color: $black;
+  }
+
   .white {
     background-color: $white;
 
@@ -355,10 +382,6 @@ hr {
       text-shadow: none;
     }
 
-  }
-
-  .black {
-    background-color: $black;
   }
 
 }
